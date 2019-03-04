@@ -10,7 +10,7 @@ public class TowerCtrlVerticle extends AbstractVerticle
   @Override
   public void start(){
     vertx.createHttpServer()
-        .requestHandler(req -> req.response().end("Hi from your Download TowerControl"))
+        .requestHandler(req -> req.response().end("Hi from your Download TowerControl!!!"))
         .listen(8080);
   }
 }
